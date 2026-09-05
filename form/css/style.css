@@ -6,6 +6,7 @@ body {
   border: 1px solid black;
   border-radius: 10px;
   width: 450px;
+  margin: 10px;
 }
 
 .fieldset {
@@ -14,9 +15,11 @@ body {
   padding: 0 10px;
 }
 
-.h1 {
+.legend {
   margin: 10px;
+  padding: 10px 0 0;
   font-size: 26px;
+  font-weight: 700;
   color: rgb(179, 238, 145);
   -webkit-text-stroke: 0.5px rgb(92, 129, 70);
 }
@@ -29,7 +32,7 @@ body {
 .text {
   font-size: 22px;
   font-weight: 500;
-  margin: 5px 0;
+  margin: 0px;
 }
 
 .input {
