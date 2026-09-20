@@ -37,6 +37,15 @@ p {
   color: #535755;
 }
 
+.title-medium {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+}
+
 .button {
   display: inline-block;
   padding: 19px 32px;
@@ -48,11 +57,22 @@ p {
   text-transform: uppercase;
   color: #fff;
   background: #3596ed;
-  transition: opacity 0.2s;
+  transition:
+    opacity 0.2s,
+    background-color 0.2s;
 }
 
 .button:hover {
   opacity: 0.85;
+}
+
+.button:active {
+  background-color: #2a77ba;
+}
+
+button.button:disabled {
+  opacity: 0.7;
+  cursor: default;
 }
 
 a {
@@ -83,4 +103,11 @@ a {
   text-transform: uppercase;
   color: #858e8a;
   margin-bottom: 8px;
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 2px solid #3596ed;
+  outline-offset: 1px;
 }
